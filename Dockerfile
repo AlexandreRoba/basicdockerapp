@@ -1,5 +1,9 @@
 FROM node:8
 
-COPY ./index.js /
+RUN mkdir -p /var/app
 
-CMD ["node", "/index.js"]
+WORKDIR /var/app
+
+COPY . /var/app
+
+CMD ["node", "index.js"]
