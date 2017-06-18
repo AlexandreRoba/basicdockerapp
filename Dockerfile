@@ -6,4 +6,6 @@ WORKDIR /var/app
 
 COPY . /var/app
 
+RUN npm install --production
+
 CMD ["node", "index.js"]

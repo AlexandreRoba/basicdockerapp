@@ -1,4 +1,8 @@
 let foo = require("./foo");
+let lp = require("left-pad");
+let _ = require("lodash");
 
-foo("WORLD FROM A MODULE IN A DOCKER NODE APP THIS IS AWESOME!");
+let stuff = lp("foo",10);
+
+foo(stuff);
 
